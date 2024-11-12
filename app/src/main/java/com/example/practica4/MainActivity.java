@@ -29,5 +29,16 @@ public class MainActivity extends AppCompatActivity {
         lNotas = findViewById(R.id.listaNotas);
 
     }
+
+    public void AgregarNotas(View view) {
+        String nota1 = nota.getText().toString().trim();
+        if(nota1.isEmpty()) {
+            Toast.makeText(this, "No puede haber campos vacios", Toast.LENGTH_SHORT).show();
+        }else {
+            ListaNotas.add(nota1);
+            lAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, ListaNotas);
+            lNotas.setAdapter(lAdapter);
+        }
+    }
 }
 

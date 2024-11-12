@@ -35,7 +35,7 @@
             android:id="@+id/btnAgregar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="AgregarNota"
+            android:onClick="AgregarNotas"
             android:text="Agregar"
             android:textAlignment="center" />
 
