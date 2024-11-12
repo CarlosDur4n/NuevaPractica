@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "No puede haber campos vacios", Toast.LENGTH_SHORT).show();
         }else {
             ListaNotas.add(nota1);
+            nota.setText("");
             lAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, ListaNotas);
             lNotas.setAdapter(lAdapter);
         }
